@@ -1,0 +1,151 @@
+body {
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/klaslokaal.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#gifje {
+    margin-top:-10em;
+    margin-bottom: -10em;
+}
+
+#terugknop {
+    margin: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 1.5em;
+    color: #1cc49d;
+    background-color: #1b2f31;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 8em;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2em;
+    width: 80em;
+    height: 65em;
+}
+
+.hole {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hole::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/laptop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.mole {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 10em;
+    height: 10em;
+    background-image: url('images/berry.png');
+    background-size: cover;
+    visibility: hidden;
+    z-index: 1;
+    cursor:grab;
+}
+
+.peek {
+    animation: peek 750ms;
+}
+
+
+@keyframes peek {
+    0% { top: 2.5em;
+         scale: 50%;}
+    50% { top: -5em;
+          scale: 100%;}
+    100% { top: 3.5em;
+          scale: 100%;}
+}
+
+.specialMole {
+    background-image: url('images/avatarry.png'); 
+}
+
+#result {
+    font-size: 1.5em;
+    visibility: hidden;
+}
+
+#timer {
+    padding-top: .25em;
+    font-size: 1.5em;
+    font-size:5em;
+}
+
+#score {
+    font-size: 1.5em;
+}
+
+#start {
+    display: block;
+    margin-top:1em;
+    margin-bottom:.0em;
+    font-size: 1.5em;
+    color: #1cc49d;
+    background-color: #1b2f31;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 8em;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#gameinfo {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left:5em;
+    padding-right:5em;
+    border-radius: 2.5em;
+    background-color: rgba(124, 124, 124, 0.397);
+}

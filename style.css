@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/klaslokaal.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color:white;
+}
+
+button {
+    margin:2em;
+    font-size: 1.5em;
+    color: #1cc49d;
+    background-color: #1b2f31;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 8em;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input { 
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight:bolder;
+    color:black;
+    font-size:1.5em;
+    padding-top:.5em;
+    padding-bottom:.5em;
+    padding-left:2.5em;
+    padding-right:2.5em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} /*https://www.geeksforgeeks.org/how-to-disable-arrows-from-number-input/*/
+
+#gifje {
+    margin-bottom: -7.5em;
+    margin-top: -11em;
+}
