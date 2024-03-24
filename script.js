@@ -62,7 +62,7 @@ function updateTimer() {
 
 //multi-html value transfer functie -----------------------------
 function inputvaluetransfer() {
-  if (window.location.href.indexOf("game.html") > -1) {
+  if (window.location.href.indexOf("game.html") > -1) { // copilot line
     time = parseInt(localStorage.getItem("inputValue"), 10);
     updateTimer();
   }
@@ -129,8 +129,7 @@ function startGame() {
   updateTimer();
   timer = setInterval(updateTimer, 1000);
   clearInterval(berrySpawnInterval);
-
-  // Use setInterval to call the spawnBerry function every 1000 milliseconds
+ 
   berrySpawnInterval = setInterval(spawnBerry, 1000);
 }
 //---------------------------------------------------------------
@@ -159,7 +158,7 @@ function endGame() {
 
 
 //whack functie -------------------------------------------------
-function whack(e) {
+function whack(e) { //Event functie met behulp van copilot geschreven
   console.log("Hit!", e);
   score++;
   berryslapaudio.play();
