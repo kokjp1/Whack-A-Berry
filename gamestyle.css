@@ -75,7 +75,7 @@ body {
     pointer-events: none;
 }
 
-.mole {
+.berry {
     position: absolute;
     top: 0;
     left: 15%;
@@ -89,7 +89,7 @@ body {
 }
 
 .peek {
-    animation: peek 750ms;
+    animation: peek 1000ms;
 }
 
 
@@ -102,7 +102,7 @@ body {
           scale: 100%;}
 }
 
-.specialMole {
+.avatarBerry {
     background-image: url('images/avatarry.png'); 
 }
 
